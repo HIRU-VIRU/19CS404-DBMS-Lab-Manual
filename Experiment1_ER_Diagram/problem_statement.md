@@ -111,6 +111,38 @@ Relationships:
 - Appointment — generates —> Billing
 - Payment — pays for —> Billing
 
+## Design Choices
+
+- **Entity-Relationship Model**: We used an ER model to clearly represent entities like Patient, Doctor, Appointment, Medical Record, Billing, Payment, and Department, and to show how they interact.
+- **Normalization**: Attributes are grouped logically into entities to minimize redundancy and maintain data integrity.
+- **Primary & Foreign Keys**: Primary keys (PK) uniquely identify each entity, and foreign keys (FK) are used to establish relationships between them.
+- **Scalability Consideration**: The model supports adding more departments, multiple appointments per patient, and billing history with linked payments.
+- **Real-world Mapping**: Real-world healthcare workflow is reflected — from booking an appointment to payment after service.
+- **Modularity**: Each entity encapsulates a specific responsibility to keep the system modular and maintainable.
+
+## Pre-requisites
+
+To use or extend this design into a functional application or database, the following are recommended:
+
+- **Basic Knowledge Requirements**
+  - Understanding of ER diagrams and database normalization
+  - Familiarity with SQL or ORM (Object-Relational Mapping) tools
+
+- **Software Requirements**
+  - ERD Design Tool (e.g., dbdiagram.io, Lucidchart, Draw.io)
+  - Database Management System (e.g., MySQL, PostgreSQL, SQLite)
+  - Optional: Backend framework (e.g., Flask, Spring Boot) to implement logic
+
+- **Development Environment**
+  - Code editor (e.g., VS Code)
+  - Git for version control (if working in a team)
+  - Python/Java/Node.js runtime (if implementing the system)
+
+- **Suggested Next Steps**
+  - Convert ER model into relational schema
+  - Generate SQL scripts for table creation
+  - Build frontend/backend logic to interact with database
+
 
 ## RESULT
 Thus, the Entity-Relationship (ER) Diagram have been created successfully.
